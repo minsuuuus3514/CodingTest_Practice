@@ -1,0 +1,29 @@
+package bigInt;
+
+// 단점 : 숫자가 클수록 계산이 오래걸림.
+
+import java.math.BigInteger;
+
+public class BigIntegerFactorial {
+
+	private static BigInteger factorial(int n) {
+		if(n == 0 || n == 1) {
+			return BigInteger.ONE;
+		}
+		BigInteger bigInt = BigInteger.valueOf(n);
+		for(int i=n; i>=2; i--) {
+			bigInt = bigInt.multiply(BigInteger.valueOf(i-1));
+		}
+		
+		return bigInt;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BigIntegerFactorial fact = new BigIntegerFactorial();
+		
+		BigInteger result = fact.factorial(10000);
+		
+		System.out.println(result);
+	}
+}

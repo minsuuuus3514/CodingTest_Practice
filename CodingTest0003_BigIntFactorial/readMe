@@ -1,0 +1,5 @@
+CodingTest0002 에서 구현한 함수에서
+입력값이 큰 경우에는 Stack Overflow가 발생한다.
+이 경우를 해결할 수 있는 방법을 구하시오.
+
+ex) factorial(1,000,000)

@@ -1,0 +1,55 @@
+package chaining;
+
+public class ChainingMain {
+
+//	class Calculator {
+//		int num = 0;
+//		
+//		public int add() {
+//			int plus = 0;
+//			num += plus;
+//			return plus;
+//		}
+//		
+//		public int substract() {
+//			int minus = 0;
+//			num -= minus;
+//			return minus;
+//		}
+//		
+//		public int out() {
+//			return num;
+//		}
+//	}
+
+	class Calculator {
+		int num = 0;
+		
+		public Calculator add(int plus) {
+			this.num += plus;
+			return this;
+		}
+		
+		public Calculator substract(int minus) {
+			this.num -= minus;
+			return this;
+		}
+		
+		public int out() {
+			return num;
+		}
+	}
+
+	
+	public void Chaining() {
+		Calculator calculator = new Calculator();
+		int result = calculator.add(4).add(5).substract(3).out();
+		System.out.println(result);
+	}
+	
+	
+	public static void main(String[] args) {
+		ChainingMain cm = new ChainingMain();
+		cm.Chaining();
+	}
+}

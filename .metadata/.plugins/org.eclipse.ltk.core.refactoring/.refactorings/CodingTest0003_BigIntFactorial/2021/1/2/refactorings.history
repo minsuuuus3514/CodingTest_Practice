@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;BigIntFactorial.java&apos; to &apos;CodingTest0003_BigIntFactorial/src/bigInt&apos;&#x0D;&#x0A;- Original project: &apos;CodingTest0003_BigIntFactorial&apos;&#x0D;&#x0A;- Destination element: &apos;CodingTest0003_BigIntFactorial/src/bigInt&apos;&#x0D;&#x0A;- Original element: &apos;BigIntFactorial.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;bigInt" element1="/src&lt;{BigIntFactorial.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1610188513561" units="1" version="1.0"/>
+</session>

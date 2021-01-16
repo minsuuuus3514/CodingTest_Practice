@@ -1,0 +1,30 @@
+package digitalPond;
+
+import java.util.Arrays;
+
+public class DigitalPond {
+
+	public int[][] land() {
+		int[][] land = new int[10][10];
+		// i=row, j=column
+		for(int i=0; i<10; i++) {
+			for(int j=0; j<10; j++) {
+				land[i][j] = 0;
+				System.out.println(land[i][j]);
+			}
+		}
+	}
+	
+	public void depth() {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DigitalPond pond = new DigitalPond();
+		int[][] result = pond.land();
+		System.out.println(result);
+	}
+
+}
